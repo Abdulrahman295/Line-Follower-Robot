@@ -14,4 +14,4 @@ We used Arduino Integrated Development Environment (IDE) that uses the c\c++ pro
 - Three Rechargeable Li-ion Batteries (3.7V)
 
 ### Circuit Diagram:
-![alt text](https://github.com/Abdulrahman295/Line-Follower-Robot/blob/main/Untitled%20Sketch_bb.png)
+![Circuit Diagram](https://github.com/Abdulrahman295/Line-Follower-Robot/blob/main/Untitled%20Sketch_bb.png)
