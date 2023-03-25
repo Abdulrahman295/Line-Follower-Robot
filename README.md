@@ -3,7 +3,7 @@
 In this project we will design a robot car which can detect a black line and follow it through a curved path.
 
 ### Technologies:
-We used Arduino Integrated Development Environment (IDE) that uses the c\c++ programming language.
+Arduino Integrated Development Environment (IDE) that uses the c\c++ programming language.
 
 ### Project Components:
 - Arduino Uno
