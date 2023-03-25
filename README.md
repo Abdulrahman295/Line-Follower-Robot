@@ -9,3 +9,4 @@ We used Arduino Integrated Development Environment (IDE) that uses the c\c++ pro
 - L289 Motor Driver
 - Robot Car Chassis 1 Layer
 - Two 9V-Dc Motors 
+- Three Rechargeable Li-ion Batteries (3.7V)
