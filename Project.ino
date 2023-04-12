@@ -22,11 +22,11 @@ void stop();
 void setup(){
 Serial.begin(9600);
 
-//IR Sensors
+//SET IR Sensors
 pinMode(R_S, INPUT);
 pinMode(L_S, INPUT);
 
-//Motors
+//SET Motors
 pinMode(EA, OUTPUT);
 pinMode(IN1, OUTPUT);
 pinMode(IN2, OUTPUT);
@@ -42,12 +42,6 @@ void loop(){
   Serial.println (analogRead(R_S));
   Serial.println (analogRead(L_S));
    
-  //If both the right and left sensors are seeing white (0) then go forward  
-  if((analogRead(R_S) <= 700)&&(analogRead(L_S) <= 700)){ 
-    forward();
-    Serial.println ("Forward");
-   } 
-
   //If Right Sensor is seeing black (1) and the left sensor is seeing white (0) Then go left
   if((analogRead(R_S) >= 700)&&(analogRead(L_S) <= 700)){
     left();
@@ -58,13 +52,16 @@ void loop(){
   //If Right Sensor is seeing white (0) and the left sensor is seeing black (1) Then go right
   else if((analogRead(R_S) <= 700)&&(analogRead(L_S) >= 700)){  
     right();
+    Serial.println ("Right");
     delay(1000);
-      Serial.println ("Right");
   }
+  
+  //If both the right and left sensors are seeing white (0) then go forward
   else{
     forward();
+    Serial.println ("Forward");
   }
-  stop();
+  
   delay(1000);
 }
 
